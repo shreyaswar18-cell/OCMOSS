@@ -22,12 +22,30 @@ from ocmoss.events.process_count import (
 from ocmoss.events.process_memory import (
     run as process_memory,
 )
-
+from ocmoss.events.network_information import (
+    run as network_information,
+)
+from ocmoss.events.internet_status import (
+    run as internet_status,
+)
+from ocmoss.events.ip_address import (
+    run as ip_address,
+)
+from ocmoss.events.wifi_information import (
+    run as wifi_information,
+)
+from ocmoss.events.wifi_password import (
+    run as wifi_password,
+)
 
 def main() -> None:
     """
     Start the OCMOSS SDK.
     """
+
+    # ===============================
+    # Version 1.0
+    # ===============================
 
     print("══════════════════════════════════════")
     print("OCMOSS")
@@ -62,6 +80,10 @@ def main() -> None:
     print("══════════════════════════════════════")
     print()
 
+    # ===============================
+    # Version 2.0
+    # ===============================
+
     print("══════════════════════════════════════")
     print("OCMOSS")
     print("Version 2.0")
@@ -78,9 +100,39 @@ def main() -> None:
     process_memory()
     print()
 
-
     print("══════════════════════════════════════")
     print("       Version 2.0 Completed")
+    print("══════════════════════════════════════")
+    print()
+
+    # ===============================
+    # Version 3.0
+    # ===============================
+
+    print("══════════════════════════════════════")
+    print("OCMOSS")
+    print("Version 3.0")
+    print("Network Monitoring")
+    print("══════════════════════════════════════")
+    print()
+
+    network_information()
+    print()
+
+    internet_status()
+    print()
+
+    ip_address()
+    print()
+
+    wifi_information()
+    print()
+
+    wifi_password()
+    print()
+
+    print("══════════════════════════════════════")
+    print("       Version 3.0 Completed")
     print("══════════════════════════════════════")
 
 
