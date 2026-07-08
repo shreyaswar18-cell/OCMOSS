@@ -1,21 +1,44 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "ocmoss"
 version = "1.0.0"
-description = "Observe, Control, Monitor Operating System SDK for Windows."
+description = "Observe • Control • Monitor Operating System (OCMOSS) - Windows Operating System Monitoring SDK."
 readme = "README.md"
 requires-python = ">=3.11"
-license = {text = "MIT"}
+license = "Apache-2.0"
 
 authors = [
-    {name = "Shreyas"}
+    { name = "Shreyas Chimalwar" }
+]
+
+keywords = [
+    "windows",
+    "monitoring",
+    "python",
+    "sdk",
+    "system",
+    "ocmoss"
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13"
 ]
 
 dependencies = []
 
+[project.urls]
+Homepage = "https://github.com/YOUR_USERNAME/OCMOSS"
+Repository = "https://github.com/YOUR_USERNAME/OCMOSS"
+Issues = "https://github.com/YOUR_USERNAME/OCMOSS/issues"
+
 [tool.setuptools.packages.find]
-where = ["."]
 include = ["ocmoss*"]

@@ -1,7 +1,2 @@
 __pycache__/
-*.pyc
-*.pyo
-*.log
-dist/
-build/
-*.egg-info/
+*.py[cod]

@@ -1,3 +1,26 @@
+Metadata-Version: 2.4
+Name: ocmoss
+Version: 1.0.0
+Summary: Observe • Control • Monitor Operating System (OCMOSS) - Windows Operating System Monitoring SDK.
+Author: Shreyas Chimalwar
+License-Expression: Apache-2.0
+Project-URL: Homepage, https://github.com/YOUR_USERNAME/OCMOSS
+Project-URL: Repository, https://github.com/YOUR_USERNAME/OCMOSS
+Project-URL: Issues, https://github.com/YOUR_USERNAME/OCMOSS/issues
+Keywords: windows,monitoring,python,sdk,system,ocmoss
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: NOTICE
+Dynamic: license-file
+
 # OCMOSS
 
 **Observe • Control • Monitor Operating System**
