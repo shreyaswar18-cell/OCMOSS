@@ -2,8 +2,7 @@
 
 **Observe • Control • Monitor Operating System**
 
-OCMOSS is a Windows Operating System Monitoring SDK written in Python. It provides developers with simple APIs to retrieve operating system events, process information, and network information in a structured way.
-OCMOSS is designed to expose operating system information that is often hidden or difficult for users to access. The goal is to provide developers with a simple, modular Python SDK for monitoring Windows system events, processes, and network activity through a clean and consistent API.
+OCMOSS is an open-source Windows Operating System Monitoring SDK written in Python. It provides a simple and modular interface for retrieving operating system lifecycle events, process information, and network information that are often difficult to access through standard Windows utilities.
 
 ---
 
@@ -41,14 +40,14 @@ OCMOSS is designed to expose operating system information that is often hidden o
 
 # Supported Platform
 
+Operating System
+
 - Windows 10
 - Windows 11
 
-Python Version:
+Python
 
-- Python 3.11+
-- Python 3.12+
-- Python 3.13+
+- Python 3.11 or later
 
 ---
 
@@ -64,31 +63,37 @@ pip install ocmoss
 
 ```python
 import ocmoss
+
+print(ocmoss.__version__)
 ```
 
 ---
 
 # Project Structure
 
-```
+```text
 OCMOSS
 │
 ├── ocmoss
+│   ├── core
 │   ├── events
 │   ├── windows
-│   └── core
+│   └── __init__.py
 │
+├── examples
+├── tests
 ├── main.py
 ├── pyproject.toml
 ├── README.md
-└── LICENSE
+├── LICENSE
+└── NOTICE
 ```
 
 ---
 
-# Current Modules
+# Modules
 
-### Operating System Lifecycle
+## Operating System Lifecycle
 
 - SystemStarted
 - LastShutdown
@@ -98,13 +103,13 @@ OCMOSS
 - WakeUp
 - PowerSourceChanged
 
-### Process Monitoring
+## Process Monitoring
 
 - RunningApplications
 - ProcessCount
 - ProcessMemoryUsage
 
-### Network Monitoring
+## Network Monitoring
 
 - NetworkInformation
 - InternetStatus
@@ -121,20 +126,30 @@ OCMOSS
 - WebcamStatus
 - MicrophoneStatus
 
-Future versions will expand OCMOSS with additional monitoring capabilities.
+Future releases will continue expanding OCMOSS with additional Windows monitoring capabilities.
+
+---
+
+# Disclaimer
+
+OCMOSS retrieves system information using supported Windows interfaces. It does not bypass Windows security, exploit vulnerabilities, or perform unauthorized access.
 
 ---
 
 # License
 
-Copyright 2026 Shreyas Chimalwar
+OCMOSS is licensed under the Apache License 2.0.
 
-Licensed under the Apache License, Version 2.0.
+See the `LICENSE` file for complete license information.
 
 ---
 
 # Author
 
-Shreyas Chimalwar
+**Shreyas Chimalwar**
 
-GitHub: *(Add your GitHub profile here after publishing.)*
+GitHub Repository:
+https://github.com/shreyaswar18-cell/OCMOSS
+
+PyPI Package:
+https://pypi.org/project/ocmoss/
